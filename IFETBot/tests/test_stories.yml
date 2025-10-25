@@ -2,90 +2,121 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-- story: happy path 1
+- story: test greeting
   steps:
   - user: |
       hello there!
     intent: greet
   - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
 
-- story: happy path 2
+- story: test goodbye
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      bye-bye!
+      bye!
     intent: goodbye
   - action: utter_goodbye
 
-- story: sad path 1
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
-
-- story: sad path 3
-  steps:
-  - user: |
-      hi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
-
-- story: say goodbye
-  steps:
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
-
-- story: bot challenge
+- story: test bot challenge
   steps:
   - user: |
       are you a bot?
     intent: bot_challenge
   - action: utter_iamabot
+
+- story: test admission procedure
+  steps:
+  - user: |
+      What is the admission procedure?
+    intent: ask_admission_procedure
+  - action: utter_admission_procedure
+
+- story: test admission dates
+  steps:
+  - user: |
+      When does the admission start?
+    intent: ask_admission_dates
+  - action: utter_admission_dates
+
+- story: test admission documents
+  steps:
+  - user: |
+      What documents are required for admission?
+    intent: ask_admission_documents
+  - action: utter_admission_documents
+
+- story: test admission eligibility
+  steps:
+  - user: |
+      What is the eligibility for BTech?
+    intent: ask_admission_eligibility
+  - action: utter_admission_eligibility
+
+- story: test fee structure
+  steps:
+  - user: |
+      What is the fee structure?
+    intent: ask_fee_structure
+  - action: utter_fee_structure
+
+- story: test scholarship
+  steps:
+  - user: |
+      Are scholarships available?
+    intent: ask_scholarship
+  - action: utter_scholarship
+
+- story: test course list
+  steps:
+  - user: |
+      List all courses offered.
+    intent: ask_course_list
+  - action: utter_course_list
+
+- story: test course duration
+  steps:
+  - user: |
+      What is the duration of BTech?
+    intent: ask_course_duration
+  - action: utter_course_duration
+
+- story: test hostel facilities
+  steps:
+  - user: |
+      What hostel facilities are available?
+    intent: ask_hostel_facilities
+  - action: utter_hostel_facilities
+
+- story: test hostel fee
+  steps:
+  - user: |
+      What is the hostel fee?
+    intent: ask_hostel_fee
+  - action: utter_hostel_fee
+
+- story: test transport facilities
+  steps:
+  - user: |
+      Is transport available?
+    intent: ask_transport_facilities
+  - action: utter_transport_facilities
+
+- story: test placement statistics
+  steps:
+  - user: |
+      What are the placement statistics?
+    intent: ask_placement_statistics
+  - action: utter_placement_statistics
+
+- story: test top recruiters
+  steps:
+  - user: |
+      Who are the top recruiters?
+    intent: ask_top_recruiters
+  - action: utter_top_recruiters
+
+- story: test contact details
+  steps:
+  - user: |
+      What is the college contact number?
+    intent: ask_contact_details
+  - action: utter_contact_details

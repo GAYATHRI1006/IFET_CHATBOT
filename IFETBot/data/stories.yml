@@ -1,30 +1,84 @@
 version: "3.1"
 
 stories:
-
-- story: happy path
+- story: greet and ask admission procedure
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: ask_admission_procedure
+  - action: utter_admission_procedure
 
-- story: sad path 1
+- story: ask admission dates
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: ask_admission_dates
+  - action: utter_admission_dates
 
-- story: sad path 2
+- story: ask admission documents
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+  - intent: ask_admission_documents
+  - action: utter_admission_documents
+
+- story: ask admission eligibility
+  steps:
+  - intent: ask_admission_eligibility
+  - action: utter_admission_eligibility
+
+- story: ask fee structure
+  steps:
+  - intent: ask_fee_structure
+  - action: utter_fee_structure
+
+- story: ask scholarship
+  steps:
+  - intent: ask_scholarship
+  - action: utter_scholarship
+
+- story: ask course list
+  steps:
+  - intent: ask_course_list
+  - action: utter_course_list
+
+- story: ask course duration
+  steps:
+  - intent: ask_course_duration
+  - action: utter_course_duration
+
+- story: ask hostel facilities
+  steps:
+  - intent: ask_hostel_facilities
+  - action: utter_hostel_facilities
+
+- story: ask hostel fee
+  steps:
+  - intent: ask_hostel_fee
+  - action: utter_hostel_fee
+
+- story: ask transport facilities
+  steps:
+  - intent: ask_transport_facilities
+  - action: utter_transport_facilities
+
+- story: ask placement statistics
+  steps:
+  - intent: ask_placement_statistics
+  - action: utter_placement_statistics
+
+- story: ask top recruiters
+  steps:
+  - intent: ask_top_recruiters
+  - action: utter_top_recruiters
+
+- story: ask contact details
+  steps:
+  - intent: ask_contact_details
+  - action: utter_contact_details
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: goodbye
+  steps:
+  - intent: goodbye
   - action: utter_goodbye

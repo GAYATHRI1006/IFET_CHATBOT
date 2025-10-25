@@ -1,13 +1,97 @@
 version: "3.1"
 
 rules:
+- rule: Respond to greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Respond to goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Respond to bot challenge
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Respond to admission procedure query
+  steps:
+  - intent: ask_admission_procedure
+  - action: utter_admission_procedure
+
+- rule: Respond to admission dates query
+  steps:
+  - intent: ask_admission_dates
+  - action: utter_admission_dates
+
+- rule: Respond to admission documents query
+  steps:
+  - intent: ask_admission_documents
+  - action: utter_admission_documents
+
+- rule: Respond to admission eligibility query
+  steps:
+  - intent: ask_admission_eligibility
+  - action: utter_admission_eligibility
+
+- rule: Respond to fee structure query
+  steps:
+  - intent: ask_fee_structure
+  - action: utter_fee_structure
+
+- rule: Respond to scholarship query
+  steps:
+  - intent: ask_scholarship
+  - action: utter_scholarship
+
+- rule: Respond to course list query
+  steps:
+  - intent: ask_course_list
+  - action: utter_course_list
+
+- rule: Respond to course duration query
+  steps:
+  - intent: ask_course_duration
+  - action: utter_course_duration
+
+- rule: Respond to hostel facilities query
+  steps:
+  - intent: ask_hostel_facilities
+  - action: utter_hostel_facilities
+
+- rule: Respond to hostel fee query
+  steps:
+  - intent: ask_hostel_fee
+  - action: utter_hostel_fee
+
+- rule: Respond to transport facilities query
+  steps:
+  - intent: ask_transport_facilities
+  - action: utter_transport_facilities
+
+- rule: Respond to placement statistics query
+  steps:
+  - intent: ask_placement_statistics
+  - action: utter_placement_statistics
+
+- rule: Respond to top recruiters query
+  steps:
+  - intent: ask_top_recruiters
+  - action: utter_top_recruiters
+
+- rule: Respond to contact details query
+  steps:
+  - intent: ask_contact_details
+  - action: utter_contact_details
+
+- rule: Respond to affirm
+  steps:
+  - intent: affirm
+  - action: utter_greet
+
+- rule: Respond to deny
+  steps:
+  - intent: deny
+  - action: utter_goodbye

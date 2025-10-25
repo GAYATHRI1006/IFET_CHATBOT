@@ -3,32 +3,75 @@ version: "3.1"
 intents:
   - greet
   - goodbye
+  - bot_challenge
+  - ask_admission_procedure
+  - ask_admission_dates
+  - ask_admission_documents
+  - ask_admission_eligibility
+  - ask_fee_structure
+  - ask_scholarship
+  - ask_course_list
+  - ask_course_duration
+  - ask_hostel_facilities
+  - ask_hostel_fee
+  - ask_transport_facilities
+  - ask_placement_statistics
+  - ask_top_recruiters
+  - ask_contact_details
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
+    - text: "Hello! How can I assist you today?"
   utter_goodbye:
-  - text: "Bye"
-
+    - text: "Goodbye! Have a great day."
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am an AI chatbot here to assist you with your queries about IFET College."
+  utter_admission_procedure:
+    - text: "The admission process involves filling the online application, submitting the required documents and attending counseling."
+  utter_admission_dates:
+    - text: "Admissions generally start in April. Please check the college website for exact dates."
+  utter_admission_documents:
+    - text: "You need your marksheets, TC, community certificate, passport-size photos and identity proof for admission."
+  utter_admission_eligibility:
+    - text: "Eligibility for BTech is a pass in 12th standard with Physics, Chemistry, and Mathematics. For PG courses, a relevant undergraduate degree is required."
+  utter_fee_structure:
+    - text: "The annual fee varies by course. For BTech, it is approximately Rs. 80,000 per year. Hostel and transport are extra."
+  utter_scholarship:
+    - text: "Yes, scholarships are provided for meritorious and economically weaker students. Details are available on the college website."
+  utter_course_list:
+    - text: "Courses offered include BTech (CSE, ECE, EEE, Civil, Mech), MCA, MBA, and more."
+  utter_course_duration:
+    - text: "BTech is 4 years, MCA is 2 years, MBA is 2 years."
+  utter_hostel_facilities:
+    - text: "Hostel facilities include separate hostels for boys and girls, mess, Wi-Fi, recreation rooms, and 24/7 security."
+  utter_hostel_fee:
+    - text: "Hostel fee is approximately Rs. 40,000 per year, including mess charges."
+  utter_transport_facilities:
+    - text: "College buses are available from various parts of the city and nearby towns."
+  utter_placement_statistics:
+    - text: "Last year, 92% of eligible students were placed. The highest package was Rs. 10 lakhs per annum."
+  utter_top_recruiters:
+    - text: "Top recruiters include TCS, Infosys, Wipro, Zoho, Amazon, Cognizant, and HCL."
+  utter_contact_details:
+    - text: "You can contact IFET College at +91-1234567890 or email info@ifet.ac.in."
 
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_iamabot
+  - utter_admission_procedure
+  - utter_admission_dates
+  - utter_admission_documents
+  - utter_admission_eligibility
+  - utter_fee_structure
+  - utter_scholarship
+  - utter_course_list
+  - utter_course_duration
+  - utter_hostel_facilities
+  - utter_hostel_fee
+  - utter_transport_facilities
+  - utter_placement_statistics
+  - utter_top_recruiters
+  - utter_contact_details

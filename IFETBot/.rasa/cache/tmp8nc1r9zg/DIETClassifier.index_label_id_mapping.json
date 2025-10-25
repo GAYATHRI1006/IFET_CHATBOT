@@ -1,0 +1,21 @@
+{
+  "0": "affirm",
+  "1": "ask_admission_process",
+  "2": "ask_contact",
+  "3": "ask_courses",
+  "4": "ask_department_details",
+  "5": "ask_events",
+  "6": "ask_facilities",
+  "7": "ask_fees",
+  "8": "ask_general_info",
+  "9": "ask_placements",
+  "10": "bot_challenge",
+  "11": "deny",
+  "12": "faq_doubts",
+  "13": "goodbye",
+  "14": "greet",
+  "15": "mood_great",
+  "16": "mood_unhappy",
+  "17": "out_of_scope",
+  "18": "thanks"
+}

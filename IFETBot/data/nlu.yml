@@ -6,87 +6,117 @@ nlu:
     - hey
     - hello
     - hi
-    - hello there
     - good morning
     - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-    - hiii
+    - hello there
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
     - bye
     - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
     - see you later
-
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - have a nice day
 
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
-    - am I talking to a human?
+
+- intent: ask_admission_procedure
+  examples: |
+    - What is the admission procedure?
+    - How do I apply for admission?
+    - Explain the admission process.
+
+- intent: ask_admission_dates
+  examples: |
+    - When does the admission start?
+    - What are the admission deadlines?
+    - What is the last date to apply?
+
+- intent: ask_admission_documents
+  examples: |
+    - What documents are required for admission?
+    - Which certificates should I submit?
+    - List the documents needed for admission.
+
+- intent: ask_admission_eligibility
+  examples: |
+    - What is the eligibility for BTech?
+    - Who can apply for admission?
+    - Tell me the eligibility criteria.
+
+- intent: ask_fee_structure
+  examples: |
+    - What is the fee structure?
+    - How much is the annual fee?
+    - Tell me the course fees.
+
+- intent: ask_scholarship
+  examples: |
+    - Are scholarships available?
+    - How can I apply for scholarship?
+    - What are the scholarships offered?
+
+- intent: ask_course_list
+  examples: |
+    - List all courses offered.
+    - What courses are available?
+    - Show me the departments.
+
+- intent: ask_course_duration
+  examples: |
+    - What is the duration of BTech?
+    - How long is the MCA course?
+    - Course duration for MBA?
+
+- intent: ask_hostel_facilities
+  examples: |
+    - What hostel facilities are available?
+    - Tell me about hostel rooms.
+    - Is there a hostel for girls?
+
+- intent: ask_hostel_fee
+  examples: |
+    - What is the hostel fee?
+    - How much does hostel cost per year?
+    - Hostel fee details please.
+
+- intent: ask_transport_facilities
+  examples: |
+    - Is transport available?
+    - Tell me about bus facilities.
+    - Do you provide college buses?
+
+- intent: ask_placement_statistics
+  examples: |
+    - What are the placement statistics?
+    - How many students got placed last year?
+    - What is the highest package?
+
+- intent: ask_top_recruiters
+  examples: |
+    - Who are the top recruiters?
+    - Which companies visit for placements?
+    - Name some recruiters.
+
+- intent: ask_contact_details
+  examples: |
+    - What is the college contact number?
+    - How can I reach admissions office?
+    - Provide contact details.
+
+- intent: affirm
+  examples: |
+    - yes
+    - sure
+    - okay
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - not really
+    - nope
+    - incorrect
